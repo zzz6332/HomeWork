@@ -19,10 +19,11 @@ public class LogInActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
+        //-------------------设置标题
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("用户名密码登陆");
         actionBar.setDisplayHomeAsUpEnabled(true);
-
+        //--------------------设置按钮响应事件
         Button button_login = (Button) findViewById(R.id.login_login);
         button_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +32,7 @@ public class LogInActivity extends AppCompatActivity {
             }
         });
     }
+
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:   //返回键的id

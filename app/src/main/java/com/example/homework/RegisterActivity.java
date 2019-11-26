@@ -15,9 +15,11 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        //----------------设置标题
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("注册");
         actionBar.setDisplayHomeAsUpEnabled(true);
+        //------------------设置点击事件
         Button button_register = findViewById(R.id.register_register);
         button_register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +30,7 @@ public class RegisterActivity extends AppCompatActivity {
         });
 
     }
+
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:   //返回键的id

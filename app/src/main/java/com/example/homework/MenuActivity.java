@@ -18,10 +18,10 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        //-----------------设置标题
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("登陆");
-
-        //*************点击菜单的登陆
+        //-----------------设置按钮响应事件
         Button button1 = (Button) findViewById(R.id.button);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
